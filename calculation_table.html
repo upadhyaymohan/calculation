@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- html developed by Mohan Upadhyay -->
+<html>
+<head>
+<title></title>
+<style type="text/css">
+input{
+padding:3px;
+background-color: cyan;
+border:solid;
+border-radius:30px;
+font-size:50px;
+}
+button{
+background-color:aqua;
+border:solid;
+border-radius:20px;
+font-size:50px
+}
+body{
+margin: 40px;
+background-color:black;
+color: white;
+width:100%;
+font-size:50px
+}
+.head{
+height:300px;
+font-family:Cursive;
+text-align:center;
+position:fixed;
+border: solid;
+background-color: yellow;
+color: black;
+
+margin:4px;
+border-radius:80px;
+
+}
+
+
+
+
+</style>
+</head>
+<body>
+<script type="text/javascript">
+// JS file code for Calculation table
+// *Made by Mohan Upadhyay
+
+// js code for adding numbers
+function plus(){
+var a=Number(document.getElementById('a').value);
+var b=Number(document.getElementById('b').value);
+var c=a+b
+
+document.getElementById("add").value=c;
+
+}
+//js code for multiplying numvers
+function multiply(){
+var d=Number(document.getElementById('c').value);
+var e=Number(document.getElementById('d').value);
+var f=d*e
+
+document.getElementById("multiply").value=f;
+
+}
+
+
+//js for devide numbers
+function devide(){
+var g=Number(document.getElementById('e').value);
+var h=Number(document.getElementById('f').value);
+var i=g/h
+
+document.getElementById("devide").value=i;
+
+}
+
+//js for find the the sqaure of a number.
+function square(){
+var j=Number(document.getElementById('g').value);
+var k=j*j
+
+document.getElementById("square").value=k;
+
+}
+//js for find the square root
+function root(){
+ var l=Number(document.getElementById('h').value);
+var m=  Math.sqrt(l)
+document.getElementById("root").value=m;
+
+}
+
+
+
+
+</script>
+<div class="head">
+<h1>CALCULATION  TABLE </h1>
+</div>
+<br> <br>
+<br> <br> <br> <br> <br>
+<!--add -->
+
+<strong> <u>This is for adding Numbers</u></strong> <br> <br>
+Enter your 1st no <input type="number" id="a" oninput="plus()"> <br> <br>
+Enter your 2nd no <input type="number" id="b" oninput="plus()">
+<br> <br>
+Answer:
+<input type="text" id="add" placeholder="ans">
+
+<br> <br>
+<hr>
+
+<!--multiply-->
+<strong><u>This is for multiplying numbers</u></strong>
+<br> <br>
+Enter your 1st no <input type="number" id="c" oninput="multiply()"> <br> <br>
+Enter your 2nd no <input type="number" id="d" oninput="multiply()">
+<br> <br>
+Answer:
+<input type="text" placeholder="ans" id="multiply">
+<br> <br> <hr> 
+
+
+<!-- devide-->
+
+<strong><u>This is for deviding numbers</u></strong>
+<br> <br>
+Enter your 1st no <input type="number" id="e"">
+<br> <br>
+Enter your 2nd no <input type="number" id="f" oninput="devide()">
+<br> <br>
+Answer:
+<input type="text" placeholder="ans" id="devide">
+<br> <br> <hr> 
+
+
+
+<!--square  -->
+
+<strong><u>This is for finding the square of numbers</u></strong>
+<br> <br>
+Enter your no <input type="number" id="g" oninput="square()">
+<br> <br>
+Answer:
+<input type="text" placeholder="ans" id="square">
+ <br> <br><hr> 
+ 
+ 
+ 
+ 
+ 
+<!-- square root-->
+ 
+ <strong><u>This is for finding the square root of a number</u></strong>
+ <br> <br>
+ Enter your No.
+ <input type="number" id="h" oninput="root()">
+ <br> <br>
+ Answer:
+ <input type="text" placeholder="ans" id="root">
+ 
+</body>
+</html>
